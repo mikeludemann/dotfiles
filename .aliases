@@ -1,0 +1,167 @@
+## Git ##
+alias gitv="git --version"
+alias giti="git init"
+alias gitcl="git clone"
+alias gitst="git status"
+alias gita="git add ."
+alias gitcm="git commit -m"
+alias gitdf="git diff"
+alias gitps="git push"
+alias gitpu="git pull"
+alias gitmb="git merge"
+alias gitpurm="git remote add"
+alias gitsta="git stash"
+alias gitstap="git stash pop"
+alias gitco="git checkout"
+alias gitcob="git checkout -b"
+alias gitbrd="git branch -d"
+alias gitl="git log"
+alias gitf="git fetch"
+alias gitre="git reset --hard"
+alias gitcolor="git config color.ui true"
+
+## Vagrant ##
+
+alias vb="vagrant box"
+alias vba="vagrant box add"
+alias vbl="vagrant box list"
+alias vbo="vagrant box outdated"
+alias vbp="vagrant box prune"
+alias vbrm="vagrant box remove"
+alias vbrp="vagrant box repackage"
+alias vbup="vagrant box update"
+
+alias vc="vagrant connect"
+
+alias vd="vagrant destroy"
+
+alias vgs="vagrant global-status"
+
+alias vh="vagrant halt"
+
+alias vi="vagrant init"
+
+alias vl="vagrant login"
+
+alias vp="vagrant package"
+
+
+
+## Bundler ##
+
+# Grunt
+
+command -v grunt > /dev/null && alias grd="grunt default"
+
+# Gulp
+
+command -v gulp > /dev/null && alias gud="gulp default"
+
+# Node and npm
+
+alias npmi="npm install"
+alias npmu="npm uninstall"
+alias npmup="npm update"
+alias npmri="rm -r node_modules && npm install"
+alias ncd="npm-check -su"
+
+## Default of OS ##
+
+# Directory
+dirUp1() { 
+    cd ../"$1"; 
+}
+dirUp2() { 
+    cd ../../"$1"; 
+}
+dirUp3() { 
+    cd ../../../"$1"; 
+}
+dirUp4() { 
+    cd ../../../../"$1"; 
+}
+dirUp5() { 
+    cd ../../../../../"$1"; 
+}
+dirUp6() { 
+    cd ../../../../../../"$1"; 
+}
+
+alias ..=dirUp1
+alias ...=dirUp2
+alias ....=dirUp3
+alias .....=dirUp4
+alias ......=dirUp5
+alias .......=dirUp6
+
+alias sb="cd -"
+
+mk() {
+	mkdir -p "$@" && cd "$_";
+}
+
+alias mkd=mk
+
+# Tree
+alias tree="tree -A"
+alias treed="tree -d"
+alias tree1="tree -d -L 1"
+alias tree2="tree -d -L 2"
+
+# Listing
+alias ll='ls -lah'
+alias la='ls -al'
+alias l='ls -lh'
+
+# Disk tools
+alias du='du -h'
+
+# copy, move and remove
+alias cp='cp -v'
+alias mv='mv -v'
+alias rm='rm -v'
+
+# Reload bash setting
+alias reloadBash='. ~/.bash_profile'
+
+# Copy - public key
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+
+# IP addresses and Network
+alias localip="ipconfig getifaddr en0"
+alias ips="ifconfig"
+
+# grep methods
+alias gr='grep'
+alias fgr='fgrep'
+alias egr='egrep'
+alias psgr="psgrep"
+
+# Global aliases
+
+if $(is-supported "alias -g"); then
+  alias -g G="| grep -i"
+  alias -g H="| head"
+  alias -g T="| tail"
+  alias -g L="| less"
+fi
+
+# sudo
+alias sd='sudo '
+
+# Software updates and upgrades settings
+alias macup="sudo softwareupdate -i -a"
+alias brewup="brew update; brew upgrade; brew cleanup"
+alias npmup="npm install npm -g; npm update -g"
+alias gemup="sudo gem update --system; sudo gem update; sudo gem cleanup"
+
+# Security (MacOS)
+command -v md5sum > /dev/null || alias md5sum="md5"
+command -v sha1sum > /dev/null || alias sha1sum="shasum"
+
+# Miscellaneous
+
+alias hosts="sudo $EDITOR /etc/hosts"
+alias his="history"
+alias quit="exit"
+alias week="date +%V"
