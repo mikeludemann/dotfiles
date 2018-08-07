@@ -45,7 +45,54 @@ alias vl="vagrant login"
 
 alias vp="vagrant package"
 
+alias vpl="vagrant plugin"
+alias vple="vagrant plugin expunge"
+alias vpli="vagrant plugin install"
+alias vpll="vagrant plugin license"
+alias vpllist="vagrant plugin list"
+alias vplr="vagrant plugin repair"
+alias vplu="vagrant plugin uninstall"
+alias vplup="vagrant plugin update"
 
+alias vpo="vagrant port"
+
+alias vpow="vagrant powershell"
+
+alias vpro="vagrant provision"
+
+alias vrdp="vagrant rdp"
+
+alias vrel="vagrant reload"
+
+alias vres="vagrant resume"
+
+alias vshare="vagrant share"
+
+alias vshot="vagrant snapshot"
+alias vshotps="vagrant snapshot push"
+alias vshotpo="vagrant snapshot pop"
+alias vshots="vagrant snapshot save"
+alias vshotre="vagrant snapshot restore"
+alias vshotl="vagrant snapshot list"
+alias vshotdel="vagrant snapshot delete"
+
+alias vssh="vagrant ssh"
+
+alias vsshc="vagrant ssh-config"
+
+alias vst="vagrant status"
+
+alias vsus="vagrant suspend"
+
+alias vup="vagrant up"
+
+alias vval="vagrant validate"
+
+alias vv="vagrant version"
+
+## Docker ##
+
+# TBD
 
 ## Bundler ##
 
