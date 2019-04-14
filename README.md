@@ -31,4 +31,12 @@ Simple helpful dotfiles
 * [Yeoman](https://github.com/mikeludemann/yeoman-install-script)
 * [Yarn](https://github.com/mikeludemann/yarn-install-script)
 * [Testing Tools](https://github.com/mikeludemann/testing_tools-install-script)
+* [Composer](https://github.com/mikeludemann/composer-install-script)
+* [Webpack](https://github.com/mikeludemann/webpack-install-script)
+* [Rollup](https://github.com/mikeludemann/rollup-installing-script)
+* [Broccoli](https://github.com/mikeludemann/broccoli-install-script)
+* [Vue](https://github.com/mikeludemann/vue-install-script)
+* [Angular](https://github.com/mikeludemann/angular-install-script)
+* [React](https://github.com/mikeludemann/react-install-script)
+* [Preact](https://github.com/mikeludemann/preact-install-script)
 * more will follow
